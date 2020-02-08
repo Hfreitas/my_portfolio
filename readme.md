@@ -1,1 +1,1 @@
-Projeto de portfólio em construção.
+Projeto de portfólio web em construção.
