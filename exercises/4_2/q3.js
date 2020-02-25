@@ -1,16 +1,17 @@
-function makeMirrorTriangle(num) {
-  let output = '';
-  for (let j = 1; j <= num ; j++) {
-    for (var k = 1; k <= j; k++) {
-      if(k < num){
-        output = ' ';
-      }else {
-        output = ' * ';
-      }
+function makeMirrorTriangle(number) {
+  for (let i = 1; i <= number; i++) {
+    let output = '';
+
+    for (let j = 1; j <= number - i; j++) {
+      output += ' ';
     }
-    output +='\n'
+
+    for (let k = 1; k <= i; k++) {
+      output += '*';
+    }
+
+    console.log(output);
   }
-  console.log(output)
 }
 
 makeMirrorTriangle(5);
