@@ -1,12 +1,12 @@
-function makeRetangle(length) {
-    let line = ' ';
-    for (let i = 1, i =< length; i+= 1) {
-        for (let j = 1, i =< length; j+=1) {
-          line += '*';
-        }
-        return line + '\n'
+function makeSquare(num) {
+  let output = '';
+  for (let j = 1; j <= num; j++) {
+    for (let i = 1; i <= num; i++) {
+      output += ' * ';
     }
+    output += '\n';
+  }
+  console.log(output);
 }
 
-
-console.log(makeRetangle(5))
+makeSquare(5);

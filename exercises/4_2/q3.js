@@ -1,17 +1,16 @@
-function makeLine(length) {
-  let line = '*';
-  for (let j = 1; j <= length; j += 1) {
-    line += ' ';
+function makeMirrorTriangle(num) {
+  let output = '';
+  for (let j = 1; j <= num ; j++) {
+    for (var k = 1; k <= j; k++) {
+      if(k < num){
+        output = ' ';
+      }else {
+        output = ' * ';
+      }
+    }
+    output +='\n'
   }
-  return line + '\n';
+  console.log(output)
 }
 
-function buildTriangle(height) {
-  let column = '*';
-  for (let i = 1; i <= height; i += 1) {
-    column += makeLine(i);
-  }
-  return column;
-}
-
-console.log(buildTriangle(5));
+makeMirrorTriangle(5);
