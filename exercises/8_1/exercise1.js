@@ -1,13 +1,13 @@
 // Crie uma função que receba um número e retorne seu fatorial
 
-/*const factorial = (num) => {
-  num === 0 || num === 1 ? factorial = 1 : for( let i = num - 1; i>=1; i--) {
+/*const FACTORIAL = (num) => {
+  num === 0 || num === 1 ? FACTORIAL = 1 : for( let i = num - 1; i>=1; i--) {
 num *= i;
   }
-  return factorial;
+  return FACTORIAL;
 };*/
 
-const factorial = (num) => {
+const FACTORIAL = (num) => {
   if (num === 0) {
     return 1;
   } else {
@@ -19,4 +19,4 @@ const factorial = (num) => {
   }
 };
 
-console.log(factorial(5));
+console.log(FACTORIAL(5));
