@@ -1,7 +1,7 @@
 // Crie uma função que receba um número e retorne seu fatorial
 const assert = require('assert');
 
-// const factorial = (num) => (num === 0) || (num === 1) ? 1 : num * factorial(num-1);
+// const factorial = (num) => (num < 2) ? 1 : num * factorial(num-1);
 
 
 const factorial = num => {

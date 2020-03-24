@@ -1,0 +1,33 @@
+<!-- Crie uma página que contenha:
+
+Um botão ao qual será associado um event listener.
+
+Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão.
+
+Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.1/Exercício 3</title>
+  </head>
+
+  <body>
+    <button id="btn-counter"> Clique aqui! <button>
+      <h2 id="click-count"> 0 </h2>
+        <script type="text/javascript">
+let clickCount = 0;
+let clickCountElement = document.getElementById('click-count');
+
+
+document.getElementById('btn-counter').addEventListener('click', ()=>{
+  clickCount +=1;
+  clickCountElement.innerHTML = clickCount;
+});
+        </script>
+  </body>
+
+</html>

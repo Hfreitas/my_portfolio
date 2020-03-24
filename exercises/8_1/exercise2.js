@@ -1,11 +1,6 @@
-/* Crie uma função que receba uma frase e retorne qual a maior palavra.
+// Crie uma função que receba uma frase e retorne qual a maior palavra.
 
-1. Tenho contar o número de letras em cada palavra da frase;
-2. Tenho que comparar esse número de letras e achar o maior;
-3. Imprimir a maior palavra da frase;
-
-Metódos:
-1. .split*/
+const assert = require('assert');
 
 /*function countWordsLength(str) {
   const arrayOfString = str.split(' ');
@@ -20,8 +15,7 @@ Metódos:
   return longestWord;
 }*/
 
-
-const LONGEST_WORD = str => {
+const longestWord = str => {
   const arrayOfString = str.split(' ');
   let characterCount = 0;
   let longestWord = '';
@@ -34,4 +28,6 @@ const LONGEST_WORD = str => {
   return longestWord;
 };
 
-console.log(LONGEST_WORD('Eu sou um desenvolvedor !'));
+const param = 'Eu sou um desenvolvedor'
+
+assert.strictEqual(longestWord(param), 'desenvolvedor');
