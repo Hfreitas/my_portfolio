@@ -86,3 +86,22 @@ const smallerName = () => {
 };
 
 assert.equal(smallerName(), 'Duna');
+
+// 3. Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
+const fantasyOrScienceFiction = () => {
+  const genreOfBooks = books.filter((element) => {
+    return (
+      element.genre === 'Ficção Científica' || element.genre === 'Fantasia'
+    );
+  });
+  return genreOfBooks.name;
+};
+
+console.log(fantasyOrScienceFiction());
+
+/* assert.deepEqual(fantasyOrScienceFiction(), [
+  'As Crônicas de Gelo e Fogo',
+  'O Senhor dos Anéis',
+  'Fundação',
+  'Duna',
+]);*/
