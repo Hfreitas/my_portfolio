@@ -4,11 +4,12 @@
   "description": "exercicios do bloco 10.1 - Jest parte 1",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch",
+    "testCoverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/Hfreitas/Hfreitas.github.io/tree/exercises/10.1"
   },
   "keywords": [
     "javascript",
