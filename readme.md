@@ -1,1 +1,0 @@
-Projeto de portfólio web em construção.
