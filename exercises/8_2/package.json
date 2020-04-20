@@ -1,0 +1,23 @@
+{
+  "name": "8_2",
+  "version": "1.0.0",
+  "description": "Exercícios do bloco 8.2 testados utilizando a suíte Jest",
+  "main": "exercise8-2.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hfreitas/Hfreitas.github.io/tree/exercises/8.2"
+  },
+  "keywords": [
+    "objects_properties",
+    "tests"
+  ],
+  "author": "Hebert Freitas",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0"
+  }
+}

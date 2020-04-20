@@ -22,6 +22,10 @@ const lesson3 = {
 
 /* 1.Crie uma função para adicionar o turno da manhã na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela*/
 
+const addEntry = (object, key,value) => {
+return object[key] = value;
+}
+
 /* 2.Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.*/
 
 // 3.Crie uma função para mostrar o tamanho de um objeto.
