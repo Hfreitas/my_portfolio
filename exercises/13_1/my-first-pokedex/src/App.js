@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import pokemons from './data';
-import PokemonGrid from './card-grid';
+import PokemonGrid from './components/card-grid';
 import './App.css';
 
 function App() {
