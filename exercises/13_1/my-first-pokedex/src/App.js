@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import pokemons from './data';
-// import PokemonGrid from './components/CardGrid';
 import PokemonCard from './components/PokemonCard';
 import Button from './components/Button';
 import './App.css';
@@ -18,9 +17,9 @@ class App extends React.Component {
   updateState = () => {
     this.setState((state) => {
       //Por que só roda com length -1
-      return state.index < pokemons.length -1
+      return state.index < pokemons.length - 1
         ? { index: state.index + 1 }
-        : { index: this.index = 0 };
+        : { index: (this.index = 0) };
     });
   };
 
@@ -31,7 +30,6 @@ class App extends React.Component {
           <h1>Vanilla PokeDex</h1>
         </header>
         <div>
-          {/* <PokemonGrid key={pokemons.name} pokemons={pokemons} /> */}
           <PokemonCard pokemons={pokemons[this.state.index]} />
         </div>
         <Button handleClick={this.updateState} label="Botão 1" />
