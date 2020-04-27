@@ -30,7 +30,7 @@ class App extends React.Component {
   };
 
 updateFilterState = (event) => {
-  this.setState({ filter: event.target.innerText });
+  this.setState({ index: 0 , filter: event.target.innerText });
 }
 
   render() {
@@ -47,6 +47,7 @@ updateFilterState = (event) => {
         <Button handleClick={this.updateIndexState} label="Next Pokémon" />
         <Button handleClick={this.updateFilterState} label="Fire" />
         <Button handleClick={this.updateFilterState} label="Psychic" />
+        <Button handleClick={this.updateFilterState} label="All" />
       </div>
     );
   }
