@@ -18,9 +18,9 @@ class App extends React.Component {
   updateCardState = () => {
     this.setState((state) => {
       //Por que só roda com length -1
-      return state.index < state.data.length
-        ? { index: state.index++ }
-        : { index: (state.index = 0) };
+      return this.state.index < this.state.data.length
+        ? { index: this.state.index++ }
+        : { index: (this.state.index = 0) };
     });
   };
 
@@ -33,7 +33,7 @@ class App extends React.Component {
         <div>
           <PokemonCard pokemons={pokemons[this.state.index]} />
         </div>
-        <Button handleClick={() => this.updateCardState()} label="Botão 1" />
+        <Button handleClick={this.updateCardState} label="Botão 1" />
       </div>
     );
   }
