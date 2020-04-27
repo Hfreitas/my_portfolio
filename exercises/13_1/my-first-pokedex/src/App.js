@@ -18,8 +18,8 @@ class App extends React.Component {
   updateCardState = () => {
     this.setState((state) => {
       //Por que só roda com length -1
-      return state.index < state.data.length 
-        ? { index: state.index ++ }
+      return state.index < state.data.length
+        ? { index: state.index++ }
         : { index: (state.index = 0) };
     });
   };
