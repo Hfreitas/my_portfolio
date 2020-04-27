@@ -33,7 +33,7 @@ class App extends React.Component {
         <div>
           <PokemonCard pokemons={pokemons[this.state.index]} />
         </div>
-        <Button handleClick={this.updateCardState} label="Botão 1" />
+        <Button handleClick={() => this.updateCardState()} label="Botão 1" />
       </div>
     );
   }
