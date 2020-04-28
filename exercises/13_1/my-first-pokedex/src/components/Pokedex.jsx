@@ -52,18 +52,26 @@ class PokeDex extends React.Component {
     const pokemonTypes = this.filterPokemonsTypes();
     return (
       <div className="poke-dex">
-        <div>
+        <div className="poke-card-conteiner">
           <PokemonCard pokemons={filteredPokemons[this.state.index]} />
         </div>
-        <Button
-          handleClick={this.updateIndexState}
-          label="Next Pokémon"
-          disabled={filteredPokemons.length <= 1 ? true : false}
-        />
-        <Button handleClick={this.updateFilterState} label="All" />
-        <div>
+        <div next-all-button-container>
+          <Button
+            className="next-pokemon"
+            handleClick={this.updateIndexState}
+            label="Next Pokémon"
+            disabled={filteredPokemons.length <= 1 ? true : false}
+          />
+          <Button
+            className="selector-all"
+            handleClick={this.updateFilterState}
+            label="All"
+          />
+        </div>
+        <div className="selector-button-container">
           {pokemonTypes.map((type) => (
             <Button
+              className="select-type"
               key={type}
               handleClick={this.updateFilterState}
               label={type}
