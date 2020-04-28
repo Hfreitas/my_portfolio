@@ -4,9 +4,9 @@ import React from 'react';
 
 class Button extends React.Component {
   render() {
-    const { handleClick, label } = this.props;
+    const { disabled, handleClick, label } = this.props;
     return (
-      <button type="button" onClick={handleClick}>
+      <button type="button" onClick={handleClick} disabled={disabled}>
         {label}
       </button>
     );
