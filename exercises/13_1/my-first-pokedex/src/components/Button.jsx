@@ -1,16 +1,14 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
-class Button extends React.Component {
-  render() {
-    const { disabled, handleClick, label } = this.props;
-    return (
-      <button type="button" onClick={handleClick} disabled={disabled}>
-        {label}
-      </button>
-    );
-  }
+/* Componente stateless, por isso construído como função, dessa forma, havendo
+props, elas são passadas como argumentos e referidas no escopo da função */
+function Button(props) {
+  const { disabled, handleClick, label } = props;
+  return (
+    <button type="button" onClick={handleClick} disabled={disabled}>
+      {label}
+    </button>
+  );
 }
 
 export default Button;
