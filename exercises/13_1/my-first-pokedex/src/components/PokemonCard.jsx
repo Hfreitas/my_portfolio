@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import '../pokemon_card.css';
+import '../style/pokemon_card.css';
 
 class Card extends React.Component {
   render() {

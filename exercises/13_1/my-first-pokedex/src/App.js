@@ -2,7 +2,7 @@
 /* eslint-disable import/no-named-as-default */
 import React from 'react';
 import PokeDex from './components/Pokedex';
-import './App.css';
+import './style/App.css';
 
 function App() {
   return (
