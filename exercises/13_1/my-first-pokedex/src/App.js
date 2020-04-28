@@ -33,9 +33,15 @@ updateFilterState = (event) => {
   this.setState({ index: 0 , filter: event.target.innerText });
 }
 
+filterPokemonsTypes = () =>{
+  return pokemons.filter(({type}) => [...(type)]);
+}
+
   render() {
     const filteredPokemons = this.pokemonFilter();
+    const pokemonTypes = this.filterPokemonsTypes();
     console.log(filteredPokemons);
+    console.log(pokemonTypes);
     return (
       <div className="App">
         <header className="dex-header">
@@ -45,9 +51,12 @@ updateFilterState = (event) => {
           <PokemonCard pokemons={filteredPokemons[this.state.index]} />
         </div>
         <Button handleClick={this.updateIndexState} label="Next Pokémon" />
-        <Button handleClick={this.updateFilterState} label="Fire" />
-        <Button handleClick={this.updateFilterState} label="Psychic" />
         <Button handleClick={this.updateFilterState} label="All" />
+        {/* <Button handleClick={this.updateFilterState} label="Fire" />
+        <Button handleClick={this.updateFilterState} label="Psychic" /> */}
+        <div>
+          {pokemons.map((pokemon, {type}) => <Button key={pokemon.id} handleClick={this.updateFilterState} label={pokemon.type} />)}
+        </div>
       </div>
     );
   }
