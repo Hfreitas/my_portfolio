@@ -82,11 +82,11 @@ class Forms extends React.Component {
             </select>
           </div>
           <div className="residence-type-field">
-            <label>
+            <label htmlFor="house">
               <input type="radio" name="home-type" id="house" value="casa" />
               Casa
             </label>
-            <label>
+            <label htmlFor="apartament">
               Apartamento
               <input
                 type="radio"
