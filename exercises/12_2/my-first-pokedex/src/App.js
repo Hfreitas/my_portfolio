@@ -4,7 +4,8 @@ import pokemons from './data';
 import PokemonGrid from './card-grid';
 import './App.css';
 
-function App() {
+function App(props) {
+  
   return (
     <div className="App">
       <header className="dex-header">
