@@ -17,6 +17,8 @@ ClickCounter.propTypes = {
   clickCounter: PropTypes.number.isRequired,
 };
 
-const mapStateToProps = (state) => ({ clickCounter: state.rootReducer });
+const mapStateToProps = (state) => ({
+  clickCounter: state.clickCounterReducer.counter,
+});
 
 export default connect(mapStateToProps)(ClickCounter);

@@ -6,7 +6,7 @@ import { clickAction } from '../actions/index';
 const ClickButton = ({ click }) => {
   return (
     <div>
-      <button type="button" onClick={() => click()}>
+      <button type="button" onClick={click}>
         Clique Aqui!
       </button>
     </div>
