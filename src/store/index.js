@@ -1,5 +1,8 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import clickCounterReducer from '../reducers/clickCounterReducer';
 
-const store = createStore();
+const rootReducer = combineReducers({ clickCounterReducer });
+
+const store = createStore(rootReducer);
 
 export default store;
